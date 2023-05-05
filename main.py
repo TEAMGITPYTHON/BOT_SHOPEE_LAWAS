@@ -34,14 +34,14 @@ browser = webdriver.Chrome(executable_path='C:\chromedriver_win32\chromedriver.e
 
 actionChains = ActionChains(browser)
 
-link_produk ='https://shopee.co.id/Kotak-Kejutan-Flash-Sale-3-i.51115741.16997193918'
-pin_number=147369
-cookie='OGtRZ0lxQ2xoNGhZYnVqNcqTJQO7j6THD6zfcapd0gI9Uf49NtKW9wkMNQhoxn47qJ0L4dBlx4YTELELaI9k6Rta3N78MB1D5C0AP4Q06uftK3CBgH/5NC1943Ee3o0qXWGYjOPNhLDPpkIhNEvfMRMTLB6E4DLCBF+H4FzmP5w='
+link_produk =''
+pin_number=
+cookie=''
 
 #INFO AUTOR
 
 def authors():
-    style = f.figlet_format("ERIC TRI IRAWAN")
+    style = f.figlet_format("ERIC FEAT AGUNG THRI")
     print(style)
     print("\033[31m----- \033[93mVersi : \033[92mBot Shopee \033[31m-----")
     print("\033[31m----- \033[93mAuthor : \033[92mERIC TRI IRAWAN  \033[31m-----")
