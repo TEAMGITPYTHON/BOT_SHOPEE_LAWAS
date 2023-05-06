@@ -34,8 +34,8 @@ browser = webdriver.Chrome(executable_path='C:\chromedriver_win32\chromedriver.e
 
 actionChains = ActionChains(browser)
 
-link_produk =''
-pin_number=
+link_produk ='https://shopee.co.id/Hp-Flashdisk-USB-Kecepatan-Tinggi-128gb-64GB-256GB-512GB-1TB-8GB-4tb-i.827702104.19436917358'
+pin_number=123456
 cookie=''
 
 #INFO AUTOR
