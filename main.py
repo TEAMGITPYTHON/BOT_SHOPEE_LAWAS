@@ -6,13 +6,12 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 from selenium.common.exceptions import *
-from fake_useragent import UserAgent
+from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.action_chains import ActionChains
-import pyautogui
+from webdriver_manager.chrome import ChromeDriverManager
 
 options = Options()
-options.headless = True
 options.add_argument("--incognito")
 options.add_argument("start-maximized")
 options.add_argument("disable-infobars")
@@ -30,7 +29,7 @@ options.add_experimental_option("prefs", prefs)
 
 # LOKASI DRIVER WEBCHROEM DI KOMPUTER
 
-browser = webdriver.Chrome(executable_path='C:\chromedriver_win32\chromedriver.exe')
+browser = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
 
 actionChains = ActionChains(browser)
 
@@ -43,9 +42,9 @@ cookie=''
 def authors():
     style = f.figlet_format("ERIC FEAT AGUNG THRI")
     print(style)
-    print("\033[31m----- \033[93mVersi : \033[92mBot Shopee \033[31m-----")
-    print("\033[31m----- \033[93mAuthor : \033[92mERIC TRI IRAWAN  \033[31m-----")
-    print("\033[31m----- \033[93mNote : \033[92mJIKA DAPET BERARTI BERUNTUNG  \033[31m-----")
+    print("\033[31m----- \033[93mVersi \t: \033[92mBot Shopee \033[31m-----")
+    print("\033[31m----- \033[93mAuthor \t: \033[92mERIC TRI IRAWAN  \033[31m-----")
+    print("\033[31m----- \033[93mNote \t: \033[92mJIKA DAPET BERARTI BERUNTUNG  \033[31m-----")
 
 def finish():
     style = f.figlet_format("HB3GV04L")
